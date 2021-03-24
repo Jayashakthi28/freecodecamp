@@ -1,0 +1,137 @@
+#header-img {
+  max-height: 70px;
+  padding: 0;
+  margin: 0;
+  margin-left: 2rem;
+  pointer-events: none;
+  max-width: 200px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  margin-top: 5rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  width: 100%;
+  height: fit-content;
+  top: 0;
+  position: fixed;
+  box-sizing: border-box;
+}
+header nav {
+  align-self: center;
+  display: flex;
+  justify-content: space-evenly;
+  width: 40rem;
+}
+header nav a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+.pro-des {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: fit-content;
+  margin: 1rem auto;
+}
+.pro-ele {
+  display: flex;
+  align-self: flex-start;
+  width: 100%;
+  margin: 0.3rem 0;
+}
+.pro-ele h2 {
+  color: darkblue;
+}
+.icon {
+  align-self: center;
+  margin: 0 2rem;
+  color: darkorange;
+}
+.icon i {
+  font-size: 2rem;
+}
+.pro-des .pro-ele:not(:nth-child(3)) {
+  border-bottom: 1px solid;
+}
+#para-cont {
+  margin-right: 1rem;
+}
+#videoer {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 2rem auto;
+  padding: 1rem;
+  width: fit-content;
+}
+#videoer iframe {
+  border-radius: 0.9rem;
+  width: 35rem;
+  height: 19.688rem;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 1rem;
+  width: 40%;
+}
+#email {
+  height: 1.5rem;
+  font-size: 1.1rem;
+  width: 15rem;
+  align-self: center;
+}
+#submit {
+  width: 10rem;
+  align-self: center;
+  margin: 1rem;
+  background-color: yellow;
+  border: none;
+  font-size: 1.1rem;
+  padding: 0.4rem;
+}
+.form-cont {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 800px) {
+  #header-img {
+    margin: 0;
+    align-self: center;
+  }
+  header {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  header nav {
+    flex-direction: column;
+    width: auto;
+    align-self: center;
+  }
+  header nav a {
+    width: fit-content;
+    margin: 0.5rem 0;
+  }
+  body {
+    margin-top: 14em;
+  }
+}
+@media (max-width: 619px) {
+  #videoer iframe {
+    width: 20em;
+    height: 10em;
+  }
+}
+@media (max-width: 350px) {
+  #videoer iframe {
+    width: 200px;
+    height: 100px;
+  }
+}
