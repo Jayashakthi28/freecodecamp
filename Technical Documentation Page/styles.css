@@ -144,9 +144,11 @@ body{
     color: #e07a5f;
 }
 .main-section code{ 
-    background-color: #eae2b7;
+    /* background-color: #eae2b7;
     background-color: #adc178;
     background-color: #00f5d4;
+    background-color: #ffd23f; */
+    background-color: #f6bd60;
     display: block;
     border-radius: 0.8rem;
     margin: 1rem 0.1rem;
