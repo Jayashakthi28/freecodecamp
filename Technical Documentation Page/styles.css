@@ -1,0 +1,242 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+.primary-header{
+    background-color: #14213d;
+    color: #f77f00;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: auto;
+}
+
+.primary-header .logo{
+    display: flex;
+    align-items: center;
+}
+
+.primary-header svg{
+    width: 35px;
+    height: 35px;
+    padding: 0.2rem;
+}
+
+.primary-header .logo h1{
+    width: fit-content;
+    height: fit-content;
+    font-size: 2rem;
+    padding: 0.2rem;
+}
+
+.primary-header .logo h1 sup{
+    font-size: .8rem;
+}
+#navbar{
+    height: 100vh;
+    width: 250px;
+    background-color: #14213d;
+    position:fixed;
+    overflow: hidden;
+    /* margin-top: 4rem; */
+    left: 0;
+    padding-bottom: 5rem;
+}
+#navbar:hover{
+    overflow: auto;
+}
+.nav-link-cont{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    padding: 0.1rem;
+}
+.nav-link{
+    color:#eae2b7;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 1.1rem 0.2rem;
+    border-bottom: 1px solid white;
+}
+#head-h1{
+    padding: 0.2rem;
+    font-size: 2.4rem;
+    color: #f77f00;
+}
+.nav-link:hover 
+{
+    background-color: #eae2b7;
+    color: black;
+}
+#navbar::-webkit-scrollbar {
+    width: 7px;
+    height: 10%;
+  }
+  
+  /* Track */
+#navbar::-webkit-scrollbar-track {
+    background: #f4d58d;
+  }
+  
+  /* Handle */
+#navbar::-webkit-scrollbar-thumb {
+    background:#708d81;
+  }
+  
+  /* Handle on hover */
+#navbar::-webkit-scrollbar-thumb:hover {
+    background: #708d81;
+  }
+  
+@media (max-width:1000px){
+    #navbar{
+        width: auto;
+        position: relative;
+        height: 290px;
+        padding-bottom: 0.2rem;
+        overflow: auto;
+        padding:0 0.3rem;
+        /* margin:0 0.3rem; */
+    }
+    .primary-header{
+        position: relative;
+    }
+    #head-h1{
+        text-align: center;
+    }
+}
+#main-doc{
+    margin-left:250px;
+    margin-top: 4.2rem;
+    overflow: auto;
+}
+body{
+    background-color: #03045e;
+    background-color:#81b29a;
+}
+.main-section{
+    background-color: #ffe8d6;
+    background-color: #023047;
+    padding: 0.5rem;
+    margin:0.3rem 0;
+    overflow: auto;
+}
+.main-section:not(:nth-child(1)){
+    padding-top: 80px;
+}
+.main-section header h1{
+    font-size: 1.6rem;
+    color: wheat;
+    color: #fff3b0;
+    color: #f5cac3;
+}
+.main-section a{
+    text-decoration: none;
+    color: #e07a5f;
+}
+.main-section code{ 
+    background-color: #eae2b7;
+    display: block;
+    border-radius: 0.8rem;
+    margin: 1rem 0.1rem;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+code pre{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    overflow: auto;
+}
+.main-section p{
+    margin: 1rem 0.1rem;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    color: wheat;
+}
+@media (max-width:1000px){
+    #main-doc{
+        margin:0.3rem;
+    }
+    .main-section code pre{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width:500px){
+    code pre{
+        width: fit-content;
+        margin: 0 auto;
+    }
+    code{
+        overflow-x: auto;
+    }
+    body{
+        overflow-x: auto;
+    }
+}
+/**************************************/
+body::-webkit-scrollbar {
+    width: 7px;
+    border-radius: 0.2rem;
+  }
+  
+  /* Track */
+body::-webkit-scrollbar-track {
+    background: #f4d58d;
+  }
+  
+  /* Handle */
+body::-webkit-scrollbar-thumb {
+    background:#708d81;
+  }
+  
+  /* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: #708d81;
+  }
+  /********************************/
+pre::-webkit-scrollbar {
+    width: 7px;
+    border-radius: 0.2rem;
+    height: 10%;
+  }
+  
+  /* Track */
+pre::-webkit-scrollbar-track {
+    background: #f4d58d;
+  }
+  
+  /* Handle */
+pre::-webkit-scrollbar-thumb {
+    background:#708d81;
+  }
+  
+  /* Handle on hover */
+pre::-webkit-scrollbar-thumb:hover {
+    background: #708d81;
+  }
+
+#Data_types{
+    overflow: auto;
+}
+#Data_types ul{
+    margin: 1rem 2rem;
+    color: wheat;
+    font-size: 1.1rem;
+    overflow: unset;
+}
+li ol{
+    margin: 0.5rem 1rem; 
+}
+ul li{
+    margin: 0.2rem;
+}
