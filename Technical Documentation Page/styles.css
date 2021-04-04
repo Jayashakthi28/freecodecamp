@@ -374,6 +374,7 @@ ul li{
 .card-cont{
     display: grid;
     grid-template-columns: 100%;
+    grid-gap:1rem;
 }
 .card-cont a{
     text-decoration: none;
