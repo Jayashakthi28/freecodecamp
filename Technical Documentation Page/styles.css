@@ -188,7 +188,6 @@ code pre{
         overflow: auto;
     }
 }
-}
 @media (max-width:500px){
     code pre{
         width: fit-content;
