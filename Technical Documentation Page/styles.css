@@ -118,6 +118,7 @@ h1{
     margin-left:250px;
     margin-top: 4.2rem;
     overflow: auto !important;
+    width: 56%;
 }
 body{
     background-color: #03045e;
@@ -262,17 +263,23 @@ ul li{
     position: fixed;
     width: 30vw;
     top: 75px;
-    height: 110vh;
+    height: 100vh;
     right: 0;
     overflow:hidden;
-    padding-bottom: 12rem;
+    padding: 2rem;
+    padding-bottom: 5rem;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-style: italic;
 }
 .card-wrap:hover{
     overflow: auto !important;
 }
-.sec-warp{
-    width: 55vw;
-}
+/* .sec-warp{
+    width: 56.5vw;
+} */
 .card-wrap header{
     padding: 1rem 0.5rem;
 }
@@ -330,13 +337,28 @@ ul li{
     text-align: center;
 }
 @media (max-width:1670px){
-    .sec-warp{
-        width: 50vw;
+    #main-doc{
+        width: 54vw;
+    }
+}
+@media (max-width:1511px){
+    #main-doc{
+        width: 52vw;
+    }
+}
+@media(max-width:1370px){
+    #main-doc{
+        width: 51vw;
     }
 }
 @media (max-width:1235px){
-    .sec-warp{
-        width: 45vw;
+    #main-doc{
+        width: 48vw;
+    }
+}
+@media(max-width:1150px){
+    #main-doc{
+        width: 46vw;
     }
 }
 @media (max-width:1000px){
@@ -346,13 +368,17 @@ ul li{
         height: fit-content;
         top: auto;
     }
-    .sec-warp{
+    #main-doc{
         width: auto;
     }
 }
 .card-cont{
     display: grid;
     grid-template-columns: 100%;
+}
+.card-cont a{
+    text-decoration: none;
+    color: black;
 }
 .card-cont .card{
     display: flex;
