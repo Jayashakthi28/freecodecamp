@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+@keyframes rotater{
+    0% {transform: rotate(0deg)};
+    /* 25% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}*/
+    75% {transform: rotate(270deg);} 
+    100% {transform: rotate(360deg);}
+}
+@keyframes rotater1{
+    0% {transform: rotate(180deg)};
+    75% {transform: rotate(360deg);} 
+    100% {transform: rotate(540deg);}
+}
+#navbar {
+  background-color: #292f36;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  min-height: 60px;
+  height: 80px;
+  transition: all 1s ease;
+}
+#navbar .heading {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+}
+#navbar .heading h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  color: #4ecdc4;
+}
+#navbar .links {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+#navbar div a {
+  margin: 0 0.8rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #4ecdc4;
+  font-weight: bold;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#navbar div a:hover {
+  background-color: #4ecdc4;
+  color: #292f36;
+}
+#navbar span {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  visibility: hidden;
+}
+#navbar span i{
+    font-size: 1.4rem;
+    color: #4ecdc4;
+}
+#navbar span i:hover{
+  animation: rotater 1s infinite;
+}
+/* @media (max-width: 566px) {
+  #navbar {
+    justify-content: center;
+  }
+} */
+.collapse{
+    height: 200px !important;
+}
+@media (max-width: 590px) {
+  #navbar {
+    justify-content: space-between;
+    flex-direction: column;
+    height: 60px;
+    overflow: hidden;
+  }
+  /* #navbar span i:hover{
+      animation-name: rotater1;
+  } */
+  #navbar .heading {
+    margin: 0;
+    display: flex;
+    align-self: flex-start;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  #navbar .links {
+    flex-direction: column;
+    align-self: flex-start;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    align-items: flex-start;
+  }
+  #navbar .links a {
+    margin: 0.3rem;
+    width: fit-content;
+  }
+  #navbar span {
+    visibility: visible;
+    cursor: pointer;
+  }
+}
+@media (min-width: 591px){
+    #navbar{
+        height: 80px !important;
+    }
+}
