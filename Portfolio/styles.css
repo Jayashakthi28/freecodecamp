@@ -1,11 +1,12 @@
 body {
   margin: 0;
   padding: 0;
+  background: url(./pawel-czerwinski-g2Zf3hJyYAc-unsplash.jpg);
+  background-size: cover;
+  height: 100vh;
 }
 @keyframes rotater{
     0% {transform: rotate(0deg)};
-    /* 25% {transform: rotate(90deg);}
-    50% {transform: rotate(180deg);}*/
     75% {transform: rotate(270deg);} 
     100% {transform: rotate(360deg);}
 }
@@ -54,6 +55,7 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
+  padding: 0 0.7rem;
 }
 #navbar div a:hover {
   background-color: #4ecdc4;
@@ -61,8 +63,11 @@ body {
 }
 #navbar span {
   position: absolute;
+  display: flex;
+  height: 80px;
+  align-items: center;
+  top: 0;
   right: 1rem;
-  top: 1rem;
   visibility: hidden;
 }
 #navbar span i{
@@ -72,37 +77,31 @@ body {
 #navbar span i:hover{
   animation: rotater 1s infinite;
 }
-/* @media (max-width: 566px) {
-  #navbar {
-    justify-content: center;
-  }
-} */
+
 .collapse{
     height: 200px !important;
 }
 @media (max-width: 590px) {
   #navbar {
-    justify-content: space-between;
-    flex-direction: column;
-    height: 60px;
+    display: unset;
+    height: 80px;
     overflow: hidden;
   }
-  /* #navbar span i:hover{
-      animation-name: rotater1;
-  } */
+  
   #navbar .heading {
     margin: 0;
     display: flex;
-    align-self: flex-start;
-    margin-top: 0.5rem;
-    margin-left: 0.5rem;
+    width: 100%;
+    height: 80px;
+    justify-content: flex-start;
+    margin-left: 1rem;
   }
   #navbar .links {
     flex-direction: column;
-    align-self: flex-start;
-    margin-top: 1rem;
     margin-left: 1rem;
     align-items: flex-start;
+    height: fit-content;
+    margin-top: 0rem;
   }
   #navbar .links a {
     margin: 0.3rem;
