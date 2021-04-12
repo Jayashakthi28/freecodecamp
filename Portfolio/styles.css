@@ -151,13 +151,16 @@ body {
   }
 }
 #projects{
-  height: 100vh;
+  height: 100%;
   background-color: orange;
   background-image: url(./pexels2.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 2rem;
+  min-height: 100vh;
+  overflow: auto;
   /* display: flex;
   justify-content: center;
   align-items: center; */
@@ -187,7 +190,7 @@ body {
 }
 .project-title{
   background-color: black;
-  height: auto;
+  height: fit-content;
   display: block;
   width: 1000px;
   justify-self: center;
@@ -198,6 +201,9 @@ body {
   text-align: center;
   padding: 1rem;
   font-size: 1.5rem;
+}
+.project-title div span{
+  color: white;
 }
 .item-wraps{
   width: 100%;
@@ -234,4 +240,12 @@ body {
   0% {color: black;}
   50% {color: gray;}
   100% {color: black;}
+}
+.spaner{
+  color: white;
+  text-align: center;
+  visibility: hidden;
+}
+.project-title:hover .spaner{
+  visibility: visible;
 }
