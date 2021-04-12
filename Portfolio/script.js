@@ -11,3 +11,28 @@ document.querySelector("#ham-burg").addEventListener("click",function (){
         document.getElementById('ham-burg').style.animationName='rotater';
     }
 })
+//owl carousel
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplatTimeout: 3000,
+    dots: false,
+    nav: true,
+    // navText: [$('.owl-nav .owl-nav-prev'), $('.owl-nav .owl-nav-next')],
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        620:{
+            items:1
+        },
+        750:{
+            items:1
+        },
+        1080:{
+            items:1
+        }
+    }
+
+})

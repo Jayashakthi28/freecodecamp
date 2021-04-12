@@ -25,6 +25,7 @@ body {
   height: 80px;
   transition: all 1s ease;
   top: 0;
+  z-index: 99999;
 }
 #navbar .heading {
   height: 100%;
@@ -148,4 +149,89 @@ body {
   #welcome-section h1{
     font-size: 1rem;
   }
+}
+#projects{
+  height: 100vh;
+  background-color: orange;
+  background-image: url(./pexels2.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+#inner-pro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-head{
+  text-align: center;
+  margin: 0;
+  padding: 2rem;
+  font-size: 2rem;
+  transition: all ease;
+  animation: colourize 3s infinite;
+}
+.project-title h2{
+  display: inline;
+}
+.projects-links{
+  text-decoration: none;
+  color: unset;
+}
+.projects-links img{
+  width: 600px;
+}
+.project-title{
+  background-color: black;
+  height: auto;
+  display: block;
+  width: 1000px;
+  justify-self: center;
+  border-radius: 0.5rem;
+}
+.project-title div{
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.item-wraps{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width:1010px){
+  .project-title{
+    width: 700px;
+  }
+}
+@media (max-width:720px){
+  .project-title{
+    width: 500px;
+  }
+}
+@media (max-width:530px){
+  .project-title{
+    width: 400px;
+  }
+}
+@media (max-width:430px){
+  .project-title{
+    width: 300px;
+  }
+}
+@media (max-width:330px){
+  .project-title{
+    width: 250px;
+  }
+}
+@keyframes colourize{
+  0% {color: black;}
+  50% {color: gray;}
+  100% {color: black;}
 }
