@@ -18,7 +18,7 @@ $('.owl-carousel').owlCarousel({
     autoplatTimeout: 3000,
     dots: false,
     nav: true,
-    // navText: [$('.owl-nav .owl-nav-prev'), $('.owl-nav .owl-nav-next')],
+    navText: [$('.owl-nav .owl-nav-prev'), $('.owl-nav .owl-nav-next')],
     responsiveClass:true,
     responsive:{
         0:{

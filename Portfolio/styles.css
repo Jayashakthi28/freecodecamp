@@ -13,6 +13,7 @@ body {
     75% {transform: rotate(360deg);} 
     100% {transform: rotate(540deg);}
 }
+
 #navbar {
   background-color: #292f36;
   background-color: black;
@@ -128,6 +129,7 @@ body {
   align-items: center;
   justify-content: center;
   background-repeat: no-repeat;
+  overflow: auto;
 }
 #welcome-section h1{
   text-align: center;
@@ -169,6 +171,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: auto;
 }
 .project-head{
   text-align: center;
@@ -248,4 +251,45 @@ body {
 }
 .project-title:hover .spaner{
   visibility: visible;
+}
+.owl-theme .owl-nav{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-self: center;
+}
+.owl-nav-prev,.owl-nav-next{
+  background-color: black !important;
+  color: white !important;
+}
+
+.owl-next,.owl-prev{
+  background-color: unset !important;
+  color: unset !important;
+  outline: none !important;
+}
+@keyframes butoncolor{
+  0% {
+    color: white;
+  }
+  25% {color: greenyellow;
+  }
+  50% {color: orange;
+  }
+  75% {color: aqua;
+  }
+  100% {color: white;
+  }
+}
+.owl-nav i{
+  animation: butoncolor 4s ease infinite;
+  font-size: 1.5rem;
+}
+.owl-nav-prev:hover i{
+  animation: unset;
+  color: yellow;
+}
+.owl-nav-next:hover i{
+  animation: unset;
+  color: yellow;
 }
