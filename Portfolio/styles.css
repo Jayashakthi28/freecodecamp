@@ -244,14 +244,20 @@ body {
   50% {color: gray;}
   100% {color: black;}
 }
-.spaner{
+/* .spaner{
   color: white;
   text-align: center;
   visibility: hidden;
+}*/
+.spaner{
+  transition: all 1s ease;
 }
-.project-title:hover .spaner{
-  visibility: visible;
-}
+.project-title:hover .spaner::before{
+  content: '\2728';
+} 
+.project-title:hover .spaner::after{
+  content: '\2728';
+} 
 .owl-theme .owl-nav{
   display: flex;
   justify-content: space-evenly;
