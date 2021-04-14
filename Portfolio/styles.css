@@ -181,7 +181,7 @@ body {
   transition: all ease;
   animation: colourize 3s infinite;
 }
-.project-title h2{
+.project-tile h2{
   display: inline;
 }
 .projects-links{
@@ -191,7 +191,7 @@ body {
 .projects-links img{
   width: 600px;
 }
-.project-title{
+.project-tile{
   background-color: black;
   height: fit-content;
   display: block;
@@ -199,13 +199,13 @@ body {
   justify-self: center;
   border-radius: 0.5rem;
 }
-.project-title div{
+.project-tile div{
   color: white;
   text-align: center;
   padding: 1rem;
   font-size: 1.5rem;
 }
-.project-title div span{
+.project-tile div span{
   color: white;
 }
 .item-wraps{
@@ -215,27 +215,27 @@ body {
   justify-content: center;
 }
 @media (max-width:1010px){
-  .project-title{
+  .project-tile{
     width: 700px;
   }
 }
 @media (max-width:720px){
-  .project-title{
+  .project-tile{
     width: 500px;
   }
 }
 @media (max-width:530px){
-  .project-title{
+  .project-tile{
     width: 400px;
   }
 }
 @media (max-width:430px){
-  .project-title{
+  .project-tile{
     width: 300px;
   }
 }
 @media (max-width:330px){
-  .project-title{
+  .project-tile{
     width: 250px;
   }
 }
@@ -252,10 +252,10 @@ body {
 .spaner{
   transition: all 1s ease;
 }
-.project-title:hover .spaner::before{
+.project-tile:hover .spaner::before{
   content: '\2728';
 } 
-.project-title:hover .spaner::after{
+.project-tile:hover .spaner::after{
   content: '\2728';
 } 
 .owl-theme .owl-nav{
@@ -298,4 +298,24 @@ body {
 .owl-nav-next:hover i{
   animation: unset;
   color: yellow;
+}
+footer{
+  background-color: #000000;
+}
+footer div:nth-child(1){
+  font-size:2rem;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+footer div:nth-child(2){
+  font-size:1rem;
+  text-align: center;
+  color: white;
+  padding: 0.5rem;
+  padding-bottom: 2rem;
+}
+footer a{
+  text-decoration: none;
+  color: white;
 }
